@@ -5,12 +5,12 @@ import 'package:flutter/material.dart';
 import 'package:monitor_friends/pages/perfil.dart';
 import '../conteudo.dart';
 
-class NotasAulaPage extends StatefulWidget {
+class BancoQuestoesPage extends StatefulWidget {
   @override
-  _NotasAulaPageState createState() => _NotasAulaPageState();
+  _BancoQuestoesPageState createState() => _BancoQuestoesPageState();
 }
 
-class _NotasAulaPageState extends State<NotasAulaPage> {
+class _BancoQuestoesPageState extends State<BancoQuestoesPage> {
   void _openConteudo() {
     Navigator.pushReplacement(context,
         MaterialPageRoute(builder: (BuildContext context) => ConteudoPage()));
@@ -22,7 +22,7 @@ class _NotasAulaPageState extends State<NotasAulaPage> {
         backgroundColor: Colors.amber,
         title: Center(
           child: Text(
-            "Notas de aula",
+            "Banco de questões",
             style: TextStyle(
               color: Colors.black,
               fontSize: 20,
@@ -63,7 +63,7 @@ class _NotasAulaPageState extends State<NotasAulaPage> {
                 margin: const EdgeInsets.only(right: 10, left: 10),
                 child: new TextField(
                   decoration: new InputDecoration(
-                      hintText: 'Produto de software com qualidade',
+                      hintText: 'Bhaskara',
                       icon: new Icon(
                         Icons.search,
                         color: Colors.black,
@@ -81,9 +81,9 @@ class _NotasAulaPageState extends State<NotasAulaPage> {
                     Padding(
                       padding: EdgeInsets.only(left: 5, right: 35),
                       child: Icon(
-                        Icons.speaker_notes,
+                        Icons.question_answer,
                         size: 35,
-                        color: Colors.blue,
+                        color: Colors.orange,
                       ),
                     ),
                     Center(
@@ -92,14 +92,14 @@ class _NotasAulaPageState extends State<NotasAulaPage> {
                             Padding(
                               padding: EdgeInsets.only(top: 8),
                               child: Text(
-                                "Qualidade vs Metodologias ágeis",
+                                "Qual a fórmula de Bhaskara?",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
                             ),
                             Text(
-                              "Daniel Guimarães",
+                              "Matemática",
                               textAlign: TextAlign.left,
                             ),
                           ],
@@ -120,9 +120,9 @@ class _NotasAulaPageState extends State<NotasAulaPage> {
                     Padding(
                       padding: EdgeInsets.only(left: 5, right: 35),
                       child: Icon(
-                        Icons.speaker_notes,
+                        Icons.question_answer,
                         size: 35,
-                        color: Colors.blue,
+                        color: Colors.orange,
                       ),
                     ),
                     Center(
@@ -131,14 +131,14 @@ class _NotasAulaPageState extends State<NotasAulaPage> {
                             Padding(
                               padding: EdgeInsets.only(top: 8),
                               child: Text(
-                                "Gerenciamento de Projetos",
+                                "Como posso calcular o delta?",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
                             ),
                             Text(
-                              "Matheus Rabelo de Souza",
+                              "Matemática",
                               textAlign: TextAlign.left,
                             ),
                           ],
@@ -159,9 +159,9 @@ class _NotasAulaPageState extends State<NotasAulaPage> {
                     Padding(
                       padding: EdgeInsets.only(left: 5, right: 35),
                       child: Icon(
-                        Icons.speaker_notes,
+                        Icons.question_answer,
                         size: 35,
-                        color: Colors.blue,
+                        color: Colors.orange,
                       ),
                     ),
                     Center(
@@ -170,131 +170,14 @@ class _NotasAulaPageState extends State<NotasAulaPage> {
                             Padding(
                               padding: EdgeInsets.only(top: 8),
                               child: Text(
-                                "Elicitação de Requisitos",
+                                "Como resolver a fórmula de Bhaskara?",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
                             ),
                             Text(
-                              "Isadora Costa de Almeida ",
-                              textAlign: TextAlign.left,
-                            ),
-                          ],
-                        ))
-                  ],
-                ),
-              ),
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(top: 10, left: 30, right: 30),
-            child: Container(
-              height: 60,
-              child: Card(
-                color: Colors.white,
-                child: Row(
-                  children: <Widget>[
-                    Padding(
-                      padding: EdgeInsets.only(left: 5, right: 35),
-                      child: Icon(
-                        Icons.speaker_notes,
-                        size: 35,
-                        color: Colors.blue,
-                      ),
-                    ),
-                    Center(
-                        child: Column(
-                          children: <Widget>[
-                            Padding(
-                              padding: EdgeInsets.only(top: 8),
-                              child: Text(
-                                "Como testar corretamente",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ),
-                            Text(
-                              "Maria Almeida de Carvalho",
-                              textAlign: TextAlign.left,
-                            ),
-                          ],
-                        ))
-                  ],
-                ),
-              ),
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(top: 10, left: 30, right: 30),
-            child: Container(
-              height: 60,
-              child: Card(
-                color: Colors.white,
-                child: Row(
-                  children: <Widget>[
-                    Padding(
-                      padding: EdgeInsets.only(left: 5, right: 35),
-                      child: Icon(
-                        Icons.speaker_notes,
-                        size: 35,
-                        color: Colors.blue,
-                      ),
-                    ),
-                    Center(
-                        child: Column(
-                          children: <Widget>[
-                            Padding(
-                              padding: EdgeInsets.only(top: 8),
-                              child: Text(
-                                "Validação e testes Software",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ),
-                            Text(
-                              "Eloá Pinheiro Matias Fontes",
-                              textAlign: TextAlign.left,
-                            ),
-                          ],
-                        ))
-                  ],
-                ),
-              ),
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(top: 10, left: 30, right: 30),
-            child: Container(
-              height: 60,
-              child: Card(
-                color: Colors.white,
-                child: Row(
-                  children: <Widget>[
-                    Padding(
-                      padding: EdgeInsets.only(left: 5, right: 35),
-                      child: Icon(
-                        Icons.speaker_notes,
-                        size: 35,
-                        color: Colors.blue,
-                      ),
-                    ),
-                    Center(
-                        child: Column(
-                          children: <Widget>[
-                            Padding(
-                              padding: EdgeInsets.only(top: 8),
-                              child: Text(
-                                "Não existe bala de prata",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ),
-                            Text(
-                              "Leticia Longanezi",
+                              "Matemática / Matemática Aplicada ",
                               textAlign: TextAlign.left,
                             ),
                           ],
